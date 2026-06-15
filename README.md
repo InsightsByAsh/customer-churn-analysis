@@ -6,12 +6,19 @@ This is a **simple and clean dashboard** designed for quick decision-making. It 
 
 ---
 
+## 💻 SQL Data Analysis (DBeaver)
+
+Before building the visuals, the data was thoroughly analyzed and structured using MySQL. Below is the screenshot of the query workflow and risk categorization logic:
+
+![SQL Analysis](cchurn.png)
+
+---
+
 ## 💼 Executive Presentation (PDF)
 
 A clean and well-structured report containing the complete project summary, MySQL risk logic, and strategic business recommendations.
 
-👉 **[View Executive Report (PDF)](customer_churn_project.pdf)** 
-*(Note: Change 'customer_churn_project.pdf' to your exact PDF file name)*
+👉 **[View Executive Report (PDF)](customer_churn_presentation.pdf)**
 
 ---
 
