@@ -1,45 +1,23 @@
-# 📊 Customer Churn Analysis
-### Tools: MySQL | Dataset: Telco Customer Churn
+## 📊 Project Dashboard
 
-## Business Problem
-A telecom company was losing customers but had no clear 
-understanding of why. The goal was to analyze 7,032 customer 
-records to identify churn patterns and provide actionable 
-retention strategies.
+This is a **simple and clean dashboard** designed for quick decision-making. It avoids clutter and focuses directly on the core business problem: understanding why customers are leaving.
 
-## Tools Used
-- MySQL — Data analysis and querying
+![Customer Churn Dashboard](customer_churn_dashboard.png)
 
-## Key Findings
-- Overall churn rate: 26.58%
-- Month-to-month + Fiber optic customers: 54.61% churn rate
-- New customers (0-12 months): 47.68% churn rate
-- Monthly revenue at risk: $139,130
-- High value customers ($74.44 avg) churn more than retained ($61.31 avg)
+---
 
-## Analysis Performed
-- Overall churn rate calculation
-- Churn by contract type
-- Churn by customer tenure groups
-- Revenue at risk calculation
-- Churn by internet service type
-- High risk customer identification
-- Customer segmentation using CASE WHEN
-- Final recommendations using CTE
+## 💼 Executive Presentation (PDF)
 
-## Key Insights
-1. Month-to-month contracts have 42.71% churn vs 2.85% for two year contracts
-2. Fiber optic users churn at 41.89% despite paying $91.50/month
-3. New customers (0-12 months) are most at risk at 47.68% churn
-4. Very High Risk segment: 916 customers with 47% already churned
+A clean and well-structured report containing the complete project summary, MySQL risk logic, and strategic business recommendations.
 
-## Business Recommendations
-- Convert month-to-month customers to long-term contracts with discounts
-- Investigate Fiber optic service quality issues immediately
-- Launch first year retention program for new customers
-- Prioritize high value churned customers for win-back campaigns
+👉 **[View Executive Report (PDF)](customer_churn_project.pdf)** 
+*(Note: Change 'customer_churn_project.pdf' to your exact PDF file name)*
 
-## Dataset
-- Source: Kaggle Telco Customer Churn Dataset
-- Total Records: 7,032 customers
-- Features: 21 columns including demographics and service details
+---
+
+### 🧠 Core DAX Measure
+
+The entire dashboard updates dynamically based on user selection using this clean calculation:
+
+```text
+Churn Rate % = DIVIDE([Total Churned], COUNT(customer_churn[customerID]), 0) * 100
