@@ -18,7 +18,7 @@ Before building the visuals, the data was thoroughly analyzed and structured usi
 
 A clean and well-structured report containing the complete project summary, MySQL risk logic, and strategic business recommendations.
 
-👉 **[View Executive Report (PDF)](customer_churn_presentation.pdf)**
+👉 👉 **[View Executive Report (PDF)](telco_churn_strategy.html.pdf)**
 
 ---
 
